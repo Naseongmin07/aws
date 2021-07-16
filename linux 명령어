@@ -100,6 +100,14 @@ only yes
 sudo su 상태에서
 mysql 접속후 패스워드를 다시한번 바꿉니다 
 
+mysql -uroot
+sudo mysql -uroot
+
+mysql_secure_installation
+
+password 입력후 only yes
+
+
 //ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root'; <- mysql version
 UPDATE user SET password = password('원하는비밀번호') WHERE user = 'root';
 
